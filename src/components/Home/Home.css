@@ -1,0 +1,10 @@
+.home_main{
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  align-items: start;
+  grid-auto-rows: 1fr;
+  margin-bottom: 50px;
+}

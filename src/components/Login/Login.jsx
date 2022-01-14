@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { POST_Login } from '../../APIs/APIs';
+import emailLogo from '../../assets/images/email.svg';
+import passwordLogo from '../../assets/images/password.svg';
 
 import './Login.css';
 
@@ -33,6 +35,7 @@ function Login() {
       <div className="login_login-form">
         <form onSubmit={submitLogin} className="login_form">
           <div className="login_form-div-input">
+            <img className="login_form-logo" src={emailLogo} />
             <input 
               type="text" 
               placeholder='Usuário'
@@ -43,6 +46,7 @@ function Login() {
             />
           </div>
           <div className="login_form-div-input">
+            <img className="login_form-logo" src={passwordLogo} />
             <input 
               type="text" 
               placeholder='Senha'

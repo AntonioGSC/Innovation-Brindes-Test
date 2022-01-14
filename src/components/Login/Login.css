@@ -3,18 +3,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../../assets/images/backgroundLogin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .login_welcome{
   color: #7fbc03;
   font-size: 1.5em;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .login_login-form{
   background-color: #7fbc03;
   padding: 70px 100px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
+  max-width: 768px;
 }
 
 .login_form{
@@ -25,15 +33,20 @@
 .login_form-div-input{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: white;
   height: 40px;
-  width: 30vw;
+  width: 300px;
   border-radius: 50px;
+  padding-left: 30px;
 }
 
 .login_form-div-input:first-child{
   margin-bottom: 15px;
+}
+
+.login_form-logo{
+  width: 14px;
 }
 
 .login_form-input{
@@ -43,6 +56,7 @@
   outline: none;
   font-size: 0.8em;
   margin-left: 10px;
+  width: 60%;
 }
 
 .login_form-input:focus{
@@ -73,4 +87,32 @@
   font-size: 14px;
   padding: 10px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .login_div{
+    padding: 16px;
+  }
+
+  .login_login-form{
+    /* padding: 70px 20px 20px; */
+    width: 100%;
+  }
+
+  .login_form-div-input{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .login_login-form{
+    padding: 70px 60px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login_login-form{
+    padding: 70px 20px 20px;
+  }
 }
