@@ -38,7 +38,28 @@ p {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  color: #7b7a7a;
+  color: #605e5e;
+}
+
+.item_main-price-div{
+  color: #434343;
+  display: inline-block;
+  width: 100%;
+  text-align: end;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.item_main-price-intro{
+  font-size: 12px;
+}
+
+.item_main-price{
+  font-weight: bold;
+}
+
+.item_main-price-footer{
+  font-size: 12px;
 }
 
 .item_footer{
